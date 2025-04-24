@@ -90,15 +90,18 @@ This project contains Verilog implementations of division algorithms, both with 
 
 ![general_view]
 
-[general_view]: https://github.com/SantiStormblessed/Division_Pipeline_Verilog/blob/main/images/ejemplo_datos_perdidos.png "General view"
+[general_view]: https://github.com/SantiStormblessed/Division_Pipeline_Verilog/blob/main/images/muestra_general.png "General view"
 
-2. **div_pipeline.v**:
+This are the results visualized on GTKWave.
 
-   - Implements a pipelined division module.
-   - Uses pipelining to improve throughput by dividing the operation into multiple stages.
-   - Outputs results with a delay corresponding to the number of pipeline stages.
+2. **Data loss on non-pipeline algorithm**:
 
-3. **div_pipeline_tb.v**:
-   - Testbench for both the non-pipelined and pipelined division modules.
-   - Generates random test cases and compares the results of both modules.
-   - Outputs simulation results to a `.vcd` file for waveform analysis.
+![Algorithm_comparison]
+
+[Algorithm_comparison]: https://github.com/SantiStormblessed/Division_Pipeline_Verilog/blob/main/images/ejemplo_datos_perdidos.png "Algorithm comparison"
+
+In the first picture we can appreciate that both algorithms successfully performed the division, with the non-pipeline version
+providing a result a couple clock cycles faster.
+
+This speed comes at the cost of some data being lost as seen in the second picture circled in red. The pipeline version of the algorithm
+doesn't have any trouble performing this operation at a rate of one per clock cycle (yellow circle).
