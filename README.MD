@@ -90,7 +90,7 @@ This project contains Verilog implementations of division algorithms, both with 
 
 ![general_view]
 
-[general_view]: https://github.com/SantiStormblessed/Division_Pipeline_Verilog/images/muestra_general.png "General view"
+[general_view]: https://github.com/SantiStormblessed/Division_Pipeline_Verilog/blob/main/images/ejemplo_datos_perdidos.png "General view"
 
 2. **div_pipeline.v**:
 
