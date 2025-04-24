@@ -88,8 +88,7 @@ This project contains Verilog implementations of division algorithms, both with 
 
 1. **General view of the results**:
 
-Reference-style:
-![alt text][general_view]
+![general_view]
 
 [general_view]: https://github.com/SantiStormblessed/Division_Pipeline_Verilog/images/muestra_general.png "General view"
 
